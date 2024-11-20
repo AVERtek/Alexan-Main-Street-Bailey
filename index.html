@@ -127,7 +127,8 @@ var getOutboundLink = function(url) {
   document.addEventListener("DOMContentLoaded", function() {
     const modelViewer = document.querySelector("#myModel");
     modelViewer.addEventListener("load", () => {
-      modelViewer.scale = "0.5 0.5 0.5";
+      const scaleFactor = 0.50;
+      modelViewer.setAttribute('style', `transform: scale(${scaleFactor}, ${scaleFactor}, ${scaleFactor});`);
     });
   });
 </script>
