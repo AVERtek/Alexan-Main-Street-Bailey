@@ -115,25 +115,15 @@ var getOutboundLink = function(url) {
 </script>
 
  <!--code snippet to direct launch AR with ar-preferred -->
-<!--<script>
+<script>
   window.addEventListener("load", () => {
     var modelViewer = document.querySelector('model-viewer');
     console.log("Can activate AR: " + modelViewer.canActivateAR);
     modelViewer.activateAR();
   });
-</script> -->
-
- <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const modelViewer = document.querySelector("#myModel");
-    modelViewer.addEventListener("load", () => {
-      const scaleFactor = 0.50;
-      modelViewer.setAttribute('style', `transform: scale(${scaleFactor}, ${scaleFactor}, ${scaleFactor});`);
-    });
-  });
 </script>
 
-<style> 
+ <style> 
  
 .container {
  column-count: 1;
